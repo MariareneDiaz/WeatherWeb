@@ -1,0 +1,99 @@
+body {
+  font-family: "Domine", serif;
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+}
+#current {
+  margin-left: 10px;
+}
+#fahrenheit-link {
+  margin-top: 300px;
+  color: white;
+  font-size: 25px;
+}
+#celsius-link {
+  margin-top: 300px;
+  color: white;
+  font-size: 25px;
+}
+#tempFirst {
+  margin-left: 350px;
+}
+#feels {
+  margin-top: 150px;
+  font-size: 30px;
+}
+.container {
+  color: #000000;
+}
+.col-6 {
+  color: white;
+  border-radius: 2px;
+  opacity: 0.9;
+  background: #2f89fc;
+
+  margin-bottom: 50px;
+  background-position: center;
+}
+.today strong {
+  font-size: 30px;
+}
+.geneva {
+  font-size: 40px;
+}
+.today {
+  position: relative;
+  font-size: 40px;
+  margin-top: 10px;
+}
+.table {
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+.chance {
+  font-size: 30px;
+}
+.time {
+  font-size: 25px;
+}
+.partly {
+  font-size: 25px;
+}
+.temperature {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  float: right;
+}
+.weather {
+  margin-top: 99px;
+  font-size: 25px;
+}
+.number {
+  color: blue;
+  font-size: 25px;
+}
+.cards {
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
+}
+.navbar {
+  font-weight: bold;
+  margin-top: 15px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    -225deg,
+    #5d9fff 0%,
+    #b8dcff 48%,
+    #6bbbff 100%
+  );
+}
