@@ -2,6 +2,11 @@ body {
   font-family: "Domine", serif;
   background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
 }
+
+#date {
+  font-size: 25px;
+  margin-left: 51px;
+}
 #current {
   margin-left: 10px;
 }
@@ -35,10 +40,11 @@ body {
   background-position: center;
 }
 .today strong {
-  font-size: 30px;
+  font-size: 50px;
 }
 .geneva {
-  font-size: 40px;
+  font-size: 25px;
+  margin-left: 130px;
 }
 .today {
   position: relative;
