@@ -32,7 +32,6 @@ function displayWeatherCondition(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
   document.querySelector("#tempMax").innerHTML = response.data.main.temp_max;
-  document.querySelector("#visibility").innerHTML = response.data.visibility;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
