@@ -13,15 +13,15 @@
           href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
-        <link rel="stylesheet" href="styles.css" />
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
         <title>Weather Web</title>
       </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <nav class="navbar navbar-dark bg-primary">
+          <nav class="navbar navbar-dark">
             <a class="navbar-brand">Search your city's weather </a>
             <form class="form-inline" id="search-form">
               <input
@@ -55,9 +55,8 @@
 
             <br />
             <span id="tempFirst">
-                
                   </span>
-                  <img src="" alt="Clear" id="icon" class="float-left" />
+                <img src=".." alt="Clear" id="icon" class="float-left" />
             <span class="temperature" id="temperature">
           </span class="units">
           <div class="float-right">
@@ -135,125 +134,23 @@
       </div>
 
       <div class="cards">
-        <div class="row">
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  ☀️
+        <div class="row weather-forecast" id="forecast">
+          <div class="col-2">
+                <h5>
                   <br />
-                  Saturday
+                  12:00
                 </h5>
-                <p class="card-text">
-                  <span class="number">
-                    25°
-                  </span>
-                  <br />
-                  Sunny
-                </p>
-                <a href="#" class="btn btn-info">See more🔍</a>
+                <img  src="http://openweathermap.org/img/wn/${
+                  forecast.weather[0].icon
+                }@2x.png"
+              />
+              <div class="weather-forecast-temperature">
+                  <strong>
+                    ${Math.round(forecast.main.temp_max)}°
+                  </strong>
+                  ${Math.round(forecast.main.temp_min)}°
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  🌥
-                  <br />
-                  Sunday
-                </h5>
-                <p class="card-text">
-                  <span class="number">
-                    14°
-                  </span>
-                  <br />
-                  Cloudy
-                </p>
-                <a href="#" class="btn btn-info">See more🔍</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  💨
-                  <br />
-                  Monday
-                </h5>
-
-                <p class="card-text">
-                  <span class="number">
-                    8°
-                  </span>
-                  <br />
-                  Windy
-                </p>
-
-                <a href="#" class="btn btn-info">See more🔍</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  🌧
-                  <br />
-                  Tuesday
-                </h5>
-                <p class="card-text">
-                  <span class="number">
-                    9°
-                  </span>
-                  <br />
-                  Rain
-                </p>
-                <a href="#" class="btn btn-info">See more🔍</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  🌤
-                  <br />
-                  Wednesday
-                </h5>
-                <p class="card-text">
-                  <span class="number">
-                    11°
-                  </span>
-                  <br />
-                  Clear sky
-                </p>
-                <a href="#" class="btn btn-info">See more🔍</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">
-                  ☀️
-                  <br />
-                  Thursday
-                </h5>
-                <p class="card-text">
-                  <span class="number">
-                    14°
-                  </span>
-                  <br />
-                  Sunny
-                </p>
-                <a href="#" class="btn btn-info">See more🔍</a>
               </div>
             </div>
           </div>
