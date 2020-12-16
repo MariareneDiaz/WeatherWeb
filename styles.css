@@ -22,9 +22,13 @@ body {
 }
 #tempFirst {
   margin-left: 350px;
+  font-size: 40px;
 }
 #feels {
   margin-top: 150px;
+  font-size: 30px;
+}
+#temperature {
   font-size: 30px;
 }
 .container {
