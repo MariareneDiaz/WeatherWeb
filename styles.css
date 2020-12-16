@@ -92,6 +92,8 @@ body {
   border-radius: 1px;
   padding: 55px;
   margin-bottom: 20px;
+  margin-left: -12px;
+  margin-right: -12px;
   background: #a57982;
   border: solid #f0d3f7;
 }
